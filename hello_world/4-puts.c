@@ -1,2 +1,2 @@
 #!/bin/bash
-puts ("Programming is like buildinga multilingual puzzle")
+gcc -o puts ("Programming is like buildinga multilingual puzzle")
