@@ -3,23 +3,23 @@
 /**
  * print_alphabet_x10 - function print_alphabet_x10
  *
- * Return: always 0 (Success)
+ * Return: void
  */
 
 void print_alphabet_x10(void)
 {
-	int i, j;
+	int i;
+	char j;
 
 	i = 1;
 
 	while (i <= 10)
 	{
-		for (j = 'a'; j >= 'z'; j++)
+		for (j = 'a'; j <= 'z'; j++)
 		{
 			_putchar('j');
 		}
 		_putchar('\n');
 		i++;
 	}
-	return (0);
 }
