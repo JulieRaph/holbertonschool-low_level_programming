@@ -2,9 +2,7 @@
 
 /**
  * times_table - function multiplication table
- *
  * @x, r, c: variable resultat, raw, column of the multiplication's table
- *
  * Return: void return (nothing)
  */
 
@@ -20,21 +18,20 @@ void times_table(void)
 
 			if (x <= 9)
 			{
-			_putchar(x + '0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+				_putchar(x + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 
 			else if (x > 9)
 			{
-			_putchar((x / 10) + '0');
-			_putchar((x % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
+				_putchar((x / 10) + '0');
+				_putchar((x % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
-
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
