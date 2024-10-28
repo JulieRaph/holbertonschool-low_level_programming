@@ -9,20 +9,29 @@
 
 void print_line(int n)
 {
-	int a;
 
-	a = 0;
+	if  (n <= 3 && n <= 10 && n <= 98)
 
-	if  (n > 0)
+		_putchar('_');
+	_putchar('\n');
 	{
-		while (a <= n)
+
+		for (n = 0 ; n <= 3 ; n++)
 		{
 			_putchar('_');
-			a++;
 		}
-	}
-	else
-	{
+		_putchar('\n');
+
+		for (n = 0 ; n <= 10 ; n++)
+		{
+			_putchar('_');
+		}
+		_putchar('\n');
+
+		for (n = 0 ; n <= 98 ; n++)
+		{
+			_putchar('_');
+		}
 		_putchar('\n');
 	}
 }
