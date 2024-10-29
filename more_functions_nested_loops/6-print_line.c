@@ -9,29 +9,14 @@
 
 void print_line(int n)
 {
+	int i = 0;
 
-	if  (n <= 3 && n <= 10 && n <= 98)
-
-		_putchar('_');
-	_putchar('\n');
-	{
-
-		for (n = 0 ; n <= 3 ; n++)
+		for (i = 1 ; i <= n ; i++)
 		{
-			_putchar('_');
+			if (n <= 0)
+				_putchar('\n');
+
+			_putchar(95);
 		}
 		_putchar('\n');
-
-		for (n = 0 ; n <= 10 ; n++)
-		{
-			_putchar('_');
-		}
-		_putchar('\n');
-
-		for (n = 0 ; n <= 98 ; n++)
-		{
-			_putchar('_');
-		}
-		_putchar('\n');
-	}
 }
