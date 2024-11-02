@@ -20,6 +20,11 @@ int _strcmp(char *s1, char *s2)
 		{
 			return (s1[s] - s2[s]);
 		}
+
+		else if (s2[s] != s1[s])
+		{
+			return (s2[s] - s1[s]);
+		}
 	}
 	return (0);
 }
