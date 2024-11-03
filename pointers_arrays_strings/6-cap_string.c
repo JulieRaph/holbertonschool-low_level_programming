@@ -8,15 +8,22 @@
 
 char *cap_string(char *cap)
 {
-	int len = 1;
+	int len = 0;
+	int s;
+	char separate[13] = " \t\n,;.!?\"(){}";
 
 	while (cap[len] != '\0')
 	{
-		if (len == 0 || cap[len - 1] == ' ')
+		if (len == 0 && cap[len] >= 'a' && cap[len] <= 'z')
+			cap[len] -= 32;
 		{
-			if (cap[len] >= 97 && cap[len] <= 122)
+			for (s = 0 ; s < 13 ; s++)
 			{
-				cap[len] -= 32;
+				if (cap[len] == separate[s])
+				{
+					if (cap[len + 1] >= 'a' && cap[len + 1] <= 'z')
+						cap[len + 1] -= 32;
+				}
 			}
 		}
 		len++;
