@@ -5,13 +5,16 @@
  * @argc: arguments number
  * @argv: array of a arguments
  * Return: always 0 (Success)
-*/
+ */
 
 int main(int argc, char *argv[])
 {
-	(void)*argv;
+	if (argv[1])
 
-	printf("Nombre d'arguments : %d\n", argc);
+		printf("%d\n", argc - 1);
+
+	else
+		printf("0\n");
 
 	return (0);
 }
