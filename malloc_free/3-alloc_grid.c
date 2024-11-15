@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * **alloc_grid - ptr to a dimensional array of integers
- * @width: largeur integer
- * @height: hauteur integer
- * Return: new pointer
+ * alloc_grid - ptr to a dimensional array of integers
+ * @width: width of the grid
+ * @height: height of the grid
+ * Return: NULL or new pointer
  */
 
 int **alloc_grid(int width, int height)
 {
 	int **grid;
-	int i = 0;
-	int j;
+	int i, j;
 
+	i = 0;
 	if (width <= 0 || height <= 0)
 		return (NULL);
 	grid = malloc(height * sizeof(*grid));
@@ -28,11 +28,10 @@ int **alloc_grid(int width, int height)
 		{
 			i--;
 			while (i >= 0)
-				{
-
-					free(grid[i]);
-					i--;
-				}
+			{
+				free(grid[i]);
+				i--;
+			}
 			free(grid);
 			return (NULL);
 		}
