@@ -2,7 +2,7 @@
 
 /**
  * free_grid - free bidimensional grid last task
- * @**grid: pointer parameter
+ * @grid: pointer parameter
  * @height: size last
  * Return: void (nothing)
 */
