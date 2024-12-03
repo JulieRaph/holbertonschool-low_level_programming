@@ -16,7 +16,7 @@ list_t *create_node(const char *value)
 	{
 		exit(98);
 	}
-	
+
 	while (value[i])
 		i++;
 
@@ -52,7 +52,6 @@ list_t *add_node(list_t **head, const char *str)
 
 	new_node->next = *head;
 	*head = new_node;
-	
 
 	return (new_node);
 }
