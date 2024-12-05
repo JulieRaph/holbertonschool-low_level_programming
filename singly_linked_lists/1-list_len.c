@@ -3,7 +3,7 @@
 /**
  * list_len - function to return numbers of elements linked list
  * @h: element head
- * Return: numbers of elements 
+ * Return: numbers of elements
 */
 
 size_t list_len(const list_t *h)
@@ -13,7 +13,7 @@ size_t list_len(const list_t *h)
 
 	if (current == NULL)
 		return (0);
-	
+
 	while (current)
 	{
 		i++;
